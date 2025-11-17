@@ -5,3 +5,4 @@ python-dotenv
 langchain-core==0.3.45
 langgraph==0.3.21
 grandalf
+langchain-openai==0.2.14
