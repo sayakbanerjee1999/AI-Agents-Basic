@@ -1,0 +1,49 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "0fd50gzpv",
+        "function": {
+          "arguments": "{\"query\":\"Pittsburgh weather\"}",
+          "name": "tavily_search_results_json"
+        },
+        "type": "function"
+      }
+    ]
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 21,
+      "prompt_tokens": 284,
+      "total_tokens": 305,
+      "completion_time": 0.033130678,
+      "prompt_time": 0.021441026,
+      "queue_time": 0.037241905,
+      "total_time": 0.054571704
+    },
+    "model_name": "llama-3.1-8b-instant",
+    "system_fingerprint": "fp_d834565e05",
+    "service_tier": "on_demand",
+    "finish_reason": "tool_calls",
+    "logprobs": null,
+    "model_provider": "groq"
+  },
+  "type": "ai",
+  "name": null,
+  "id": "lc_run--681b8d8e-f0d4-43d7-aaed-7d2850425e0f-0",
+  "tool_calls": [
+    {
+      "name": "tavily_search_results_json",
+      "args": { "query": "Pittsburgh weather" },
+      "id": "0fd50gzpv",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 284,
+    "output_tokens": 21,
+    "total_tokens": 305
+  }
+}
