@@ -22,6 +22,8 @@ def system_time(format: str = "%Y-%m-%d %H:%M:%S"):
     format_time = curr_time.strftime(format)
     return format_time
 
+# Initialize the Zero Shot ReACT Agent with required tools
+# Prompt - https://smith.langchain.com/hub/hwchase17/react?organizationId=d249de7b-ca3c-4265-b3bd-6b655478a206
 agent = initialize_agent(
     tools = [search_tool, system_time],
     llm = llm,
